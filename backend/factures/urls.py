@@ -13,7 +13,7 @@ urlpatterns = [
     path('factures_vente/create/', FactureVenteCreateView.as_view(), name='facture-create'),
     path('factures_vente/<int:pk>/update/', FactureVenteUpdateView.as_view(), name='facture-update'),
     path('factures_vente/<int:id>/pdf/', PDFFactureView.as_view(), name='facture-pdf'),
-     path('Non-payées/', VueListeNonpayée.as_view(), name='liste_clients_vip'),
+    path('Non-payées/', VueListeNonpayée.as_view(), name='liste_factures_nonpayée'),
 
 ]
 
